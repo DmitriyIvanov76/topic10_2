@@ -1,0 +1,29 @@
+[project]
+name = "topic10-2"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Dmitriy Ivanov",email = "dmtr_ivanov@outlook.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "topic10"}]
+
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "^7.1.1"
+mypy = "^1.15.0"
+black = "^25.1.0"
+isort = "^6.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
