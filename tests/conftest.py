@@ -3,5 +3,5 @@ import pytest
 
 @pytest.fixture
 
-def nums():
-    return
+def number_list():
+    return "oleg"
